@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+	<meta charset="UTF-8">
+	<title>	About Us</title>
+	<meta charset="utf-8">
+    <meta class="vieport" content="width=device-width, initial-scale=1">
+        
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+	<div class="page__row">
+    		<div class="page__cell">
+    			<header class="header">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo">
+                        <img class="logo__picture" src="images/logo1.png" alt="">
+                        </a>                        
+                    </div>
+
+    				<div class="header__contact">
+                       <div class="header__phone-number">
+                            <a href="tel:+380681356772" class="phone-number">
+                            +380681356772
+                            </a>  
+                        </div>                     
+                        <div class="header__email-address">                     
+                            <a href="mailto:kostia.olejnik1998@gmail.com" class="email-address">
+                            kostia.olejnik1998@gmail.com
+                            </a>  
+                       </div>
+
+                      				
+    			</header>
+    		</div>            
+    	</div>
+        <div class="page__row">
+            <div class="page__cell  ">
+                <nav class="nav">
+                    <div class="nav__btn">
+                        <button data-target="#nav-main" type="button" class="btn-nav">
+                            <span class="btn-nav__line"></span>
+                            <span class="btn-nav__line"></span>
+                            <span class="btn-nav__line"></span>
+                            
+                        </button>
+                    </div>
+                    <ul class="nav__list " id="nav-main">
+                        <li class="nav_item">
+                            <a href="index.html" class="nav__link link">
+                                Главная
+                            </a>                            
+                        </li>
+
+                        
+
+                        <li class="nav_item">
+                            <a href="record.html" class="nav__link link">
+                                Запись на стрижку
+                            </a>                            
+                        </li>
+
+                       <li class="nav_item">
+                            <a href="aboutUs.html" class="nav__link link">
+                                О нас
+                            </a>                            
+                        </li>
+
+                        
+                                        
+                    </ul>
+                    
+                </nav>                
+            </div>            
+        </div>
+
+		<div class="page__row">
+			<div class="page__cell">
+				<p> Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+				<h5 class="headline__map">Наше местонахождения</h5>
+    		<div id="map"  >
+    		
+    		</div>
+    		<script>
+     			 function initMap() {
+        var uluru = {lat: 50.428518, lng: 30.471847};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7AmHnpC2x7gfxi2pKR1sVh2_exidrog&callback=initMap">
+    </script>
+		</div>
+			</div>
+
+
+		<div class="page__row">
+			<div class="page__cell-button">
+
+				<a href="connection/index.html" class="button">
+			Обратная связь
+			</a>
+        
+			</div>
+		</div>	
+			
+
+        <div class="page__row page__row--footer"> 
+            <div class="page__cell">
+                <footer class="footer">
+                    <div class="footer__copyright">
+                        Olejnik Kostia &copy; <br>
+                        <a class="footer__link" href="http://its.kpi.ua">its.kpi.ua</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/script.js"></script>
+
+	
+	
+</body>
+</html>
